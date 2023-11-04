@@ -30,8 +30,8 @@
       </div>
       <nav class="nav-menu">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
           <!-- <li><a href="html/projetos.html">Projetos</a></li> -->
           <li>
             <button class="darkbutton" onclick="darkmode()"><i class="bi bi-moon"></i></button>
@@ -41,7 +41,7 @@
 
       <!-- Botão Contato -->
       <div class="btn-contato" id="contato">
-        <a href=""><button>Contato</button></a>
+        <a href="#formulario"><button>Contato</button></a>
       </div>
     </div>
   </header>
@@ -50,11 +50,14 @@
   <main>
     <div class="flex">
       <div class="container">
-        <section class="inicio">
+        <section class="inicio" id="inicio">   <!-- Inicio -->
           <div class="interface">
-            <div class="txt-inicio"><!-- Boas Vindas -->
+            <div class="txt-inicio">  <!-- Boas Vindas -->
               <h1>Boas Vindas à<span> Apolo Portfólios!</span></h1>
               <p>Aqui você pode encontrar desenvolvedores para o seu projeto ideal.</p>
+              <div class="btn-contato">
+                <a href="#sobre"><button>Saiba Mais!</button></a>
+              </div>
             </div>
           </div>
         </section>
@@ -62,7 +65,7 @@
     </div>
 
     <!-- Sobre o Portfólio -->
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <div class="interface">
         <div class="txt-sobre">
           <h2 class="titulo">Sobre o <span>Portfólio.</span></h2>
@@ -91,7 +94,7 @@
     </section>
 
     <!-- Formulário Contato -->
-    <section class="formulario"> <!-- Inicio Fale comigo! -->
+    <section class="formulario" id="formulario"> <!-- Inicio Fale comigo! -->
       <div class="interface">
         <h2 class="titulo">Fale <span>Conosco.</span></h2>
         <form action="">
