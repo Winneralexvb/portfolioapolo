@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.style.position = "fixed";
       navbar.style.top = "0";
       navbar.style.transition = "top 0.3s ease-in-out";
-      darkButton.style.backgroundColor = "goldenrod";
+      darkButton.style.backgroundColor = "black";
       darkButton.style.transition = "background-color 0.3s ease-in-out, transform 0.3s ease-in-out";
       darkButton.style.transform = "scale(1.15)";
       isScrolled = true;
