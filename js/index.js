@@ -1,27 +1,5 @@
 // https://blog.xpeducacao.com.br/dark-mode-css/
 // https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
-//   var menu = document.querySelector('u#menu-nav');
-//if (window.pageYOffset > 150) {
-//  menu.style.justifycontent = 'flex-end';
-//} else {
-//  menu.style.justifycontent = 'center';
-//}
-
-// function darkmode() {
-//   var element = document.body;
-//   element.classList.toggle("dark-mode");
-// }
-
-// window.addEventListener("scroll", function() {
-//   var menu = document.querySelector("header nav");
-//   if (window.scrollY > 70) {
-//     menu.style.position = "fixed";
-//     menu.style.top = "0";
-//   }
-//   else {
-//     menu.style.position = "static";
-//   }
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector("header nav");

@@ -113,14 +113,9 @@ header nav.scrolled {
 }
 
 header nav ul {
-  padding: 15px;
+  padding: 3px 4px;
   border-radius: 25px;
-  justify-content: space-between;
-}
-
-/* Fim !!!!!!!!! */
-
-header nav ul {
+  justify-content: space-around;
   list-style-type: none;
   border-radius: 25px;
   background-color: black;
@@ -128,7 +123,16 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 10px 10px;
+}
+
+header nav ul li a {
+  font-size: 15px;
+  justify-content: center;
+}
+
+header nav ul li i {
+  font-size: 15px;
 }
 
 nav .darkbutton {
@@ -146,6 +150,7 @@ nav .darkbutton:hover {
 }
 
 /* Modificação Logo do Menu */
+
 header .interface .logo a img {
   width: auto;
   height: 50px;
@@ -406,11 +411,17 @@ footer .rodape .logo-rodapefora {
     flex-direction: row;
   }
 
+  header .interface .logo a img{
+    padding: 0px;
+    width: auto;
+    height: 25px;
+    border-radius: 15px;
+  }
+
   header a {
     font-size: 14px;
 
   }
-
 
   header nav ul {
     padding: 10px 7px;
@@ -421,6 +432,13 @@ footer .rodape .logo-rodapefora {
     padding: 10px 25px;
   }
 
+  header nav ul li a {
+    font-size: 10px;
+  }
+
+  header nav ul li i {
+    font-size: 10px;
+  }
 
   /* CSS Banner inicio MOBILE */
   .container {
