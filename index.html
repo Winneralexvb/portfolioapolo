@@ -25,40 +25,28 @@
   <!-- Menu de Navegação -->
   <header>
     <div class="interface">
+      <div class="logo">
+        <a href="#"><img src="img/apoloicon.png" alt="Apolo Portfólios"></a>
+      </div>
       <nav class="nav-menu">
         <ul>
           <!-- Logo Apolo -->
-          <li>
-            <div class="logo">
-              <a href="#"><img src="img/apoloicon.jpg" alt="Apolo Portfólios"></a>
-            </div>
-          </li>
           <li><a href="#inicio">Ir para o Topo</a></li>
           <li><a href="#sobre">Quem Somos</a></li>
-          <!-- <li><a href="html/projetos.html">Projetos</a></li> -->
-          <li>
-            <button class="darkbutton" onclick="darkmode()"><i class="bi bi-moon"></i></button>
-          </li>
           <!-- Botão Contato -->
           <li>
-            <div class="btn-contato btncontatonav" id="contato">
-              <a href="#formulario"><button>Contato</button></a>
-            </div>
+            <a href="#formulario">
+              <button class="btn-contato btn-contato-nav">
+                <i class="bi bi-telephone-fill"></i>
+              </button>
+            </a>
           </li>
         </ul>
-      </nav>
-      <!-- 
-      <nav class="menu-mobile">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Quem Somos</a></li>
-          <li><a href="html/projetos.html">Projetos</a></li>
-          <li>
-            <button class="darkbutton" onclick="darkmode()"><i class="bi bi-moon"></i></button>
-          </li>
-        </ul>
-      </nav>
-    -->
+      </nav> <!-- FIM NAVBAR -->
+      <div class="btn">
+        <button class="darkbutton" onclick="darkmode()"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="#formulario"><button class="btn-contato">Contato</button></a>
+      </div>
     </div>
   </header>
 
@@ -71,7 +59,7 @@
             <div class="txt-inicio"> <!-- Boas Vindas -->
               <h1>Boas Vindas à<span> Apolo Portfólios!</span></h1>
               <p>Aqui você pode encontrar desenvolvedores para o seu projeto ideal.</p>
-              <div class="btn-contato">
+              <div class="btn-contatoinicio">
                 <a href="#sobre"><button>Saiba Mais!</button></a>
               </div>
             </div>
@@ -91,6 +79,7 @@
               Desenvolvimento de Sistemas</span>
             da <span>Unisuam</span> como projeto do módulo de desenvolvimento em front-end.
           </p>
+          <h2 class="titulo escolha"><span>Qual portfólio você gostaria de ver?</span></h4>
         </div>
       </div>
       <div class="flex"> <!-- Imagens da equipe do Portfólio e Class Overlay:hover --> <!-- 52,88x69,99 -->
@@ -100,6 +89,9 @@
             <div class="overlay-nome">Kauã Pereira</div>
           </div>
         </a>
+        <div class="arrow">
+          <i class="bi bi-arrows"></i>
+        </div>
         <!-- Link Portfólio Membro 2 -->
         <a href="https://winneralexvb.github.io/winnerportfolio/">
           <div class="img-equipe" style="background-image: url(./img/winner.jpg);">
@@ -145,15 +137,21 @@
           </ul>
           <div class="footer-e-mail">
             <h3 class="titulordp">E-mails:</h3>
-            <p><a href="mailto:kauapereira@souunisuam.com.br"><i class="bi bi-envelope"></i> E-mail Kauã</a></p>
-            <p><a href="mailto:winneralex@souunisuam.com.br"><i class="bi bi-envelope"></i> E-mail Winner</a></p>
+            <p>
+              <a href="mailto:kauapereira@souunisuam.com.br"><i class="bi bi-envelope"></i> E-mail Kauã</a>
+            </p>
+            <p>
+              <a href="mailto:winneralex@souunisuam.com.br"><i class="bi bi-envelope"></i> E-mail Winner</a>
+            </p>
           </div>
           <div class="logo-rodape">
-            <a href="https://winneralexvb.github.io/portfolioapolo/"><img src="./img/apolo.jpg"></a>
+            <a href="https://winneralexvb.github.io/portfolioapolo/">
+              <img src="./img/apoloicon.png">
+            </a>
           </div>
         </div>
         <div class="logo-rodapefora">
-          <a href="https://winneralexvb.github.io/portfolioapolo/"><img src="./img/apolo.jpg"></a>
+          <a href="https://winneralexvb.github.io/portfolioapolo/"><img src="./img/apoloicon.png">
         </div>
       </div>
     </div>

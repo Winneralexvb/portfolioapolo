@@ -27,10 +27,11 @@ body {
 }
 
 .dark-mode {
-  background-color: white;
+  background-color: rgb(243, 220, 191);
+  color: black;
 }
 
-.btn-contato button {
+.btn-contato, .btn-contato button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 500;
@@ -44,7 +45,7 @@ body {
 
 button:hover {
   box-shadow: 0px 0px 8px goldenrod;
-  transform: scale(1.10);
+  transform: scale(1.05);
 }
 
 .container {
@@ -57,8 +58,8 @@ button:hover {
 }
 
 h2.titulo {
-  color: white;
-  font-size: 30px;
+  color: inherit;
+  font-size: 34px;
   text-align: center;
 }
 
@@ -66,19 +67,13 @@ h2.titulo span {
   color: goldenrod;
 }
 
-h2.dark {
-  color: black;
-  font-size: 30px;
-  text-align: center;
-}
-
-h2.dark span {
-  color: goldenrod;
+.btn-contato-nav {
+  display: none;
 }
 
 /* CSS Cabeçalho */
 header {
-  padding: 40px 4%;
+  padding: 20px 4%;
 }
 
 header>.interface {
@@ -95,8 +90,12 @@ header a {
   transition: .3s;
 }
 
-header a:hover {
+header nav a:hover {
   color: goldenrod;
+  transform: scale(1.15);
+}
+
+header .logo a:hover {
   transform: scale(1.15);
 }
 
@@ -113,7 +112,7 @@ header nav.scrolled {
 }
 
 header nav ul {
-  padding: 3px 4px;
+  padding: 2px 2px;
   border-radius: 25px;
   justify-content: space-around;
   list-style-type: none;
@@ -123,7 +122,7 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 header nav ul li a {
@@ -131,17 +130,15 @@ header nav ul li a {
   justify-content: center;
 }
 
-header nav ul li i {
+header .darkbutton {
   font-size: 15px;
-}
-
-nav .darkbutton {
   padding: 10px 15px;
-  color: white;
-  background-color: black;
+  color: goldenrod;
+  background-color:black;
   border: 0px;
   border-radius: 15px;
-  transition: .2s
+  transition: .2s;
+  cursor:pointer
 }
 
 nav .darkbutton:hover {
@@ -149,22 +146,21 @@ nav .darkbutton:hover {
   transform: scale(1.15);
 }
 
+header nav button {
+  display: none;
+}
+
 /* Modificação Logo do Menu */
 
 header .interface .logo a img {
   width: auto;
-  height: 50px;
-  border-radius: 15px;
+  height: 80px;
+
 }
 
 /* CSS Banner Inicio */
 .container section.inicio {
   padding: 130px 4%;
-}
-
-section.inicio .flex {
-  align-items: center;
-  justify-content: center;
 }
 
 .inicio .txt-inicio h1 {
@@ -183,8 +179,20 @@ section.inicio .flex {
 .inicio .txt-inicio p {
   max-width: 380px;
   color: white;
-  margin: 15px 0;
+  padding: 15px 0;
   font-size: 18px;
+}
+
+.btn-contatoinicio button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: goldenrod;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: .2s;
 }
 
 /* CSS Sobre o Portfólio */
@@ -196,17 +204,22 @@ section.sobre {
 section.sobre .flex {
   justify-content: space-evenly;
   margin-top: 60px;
+  align-items: center;
 }
 
 .sobre .txt-sobre p {
-  margin: 10px 0;
-  color: white;
-  font-size: 18px;
+  margin: 12px 0;
+  color: inherit;
+  font-size: 20px;
   text-align: center;
 }
 
 .sobre .txt-sobre p span {
   color: goldenrod;
+}
+
+.sobre .txt-sobre .escolha span{
+  font-size: 26px;
 }
 
 section.sobre .img-equipe {
@@ -242,6 +255,12 @@ section.sobre .img-equipe {
   transform: scale(1.02);
 }
 
+section.sobre .arrow {
+  position: absolute;
+  font-size: 80px;
+  color: goldenrod;
+}
+
 /* CSS Formulário Fale Conosco */
 section.formulario {
   padding: 120px 4%;
@@ -260,12 +279,12 @@ form {
 form input,
 form textarea {
   width: 100%;
-  background-color: rgba(58, 57, 57, 0.151);
+  background-color: rgba(58, 57, 57, 0.397);
   border: none;
   outline: none;
   padding: 20px 15px;
   border-radius: 15px;
-  color: white;
+  color: inherit;
   font-size: 18px;
   transition: .9s;
 }
@@ -314,7 +333,7 @@ footer {
 footer .rodape {
   padding: 10px 4%;
   height: auto;
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
 }
 
 footer .flex {
@@ -339,7 +358,7 @@ footer .rodape ul li {
 }
 
 footer .rodape ul li a {
-  color: white;
+  color: inherit;
   text-decoration: none;
   font-size: 13px;
 }
@@ -355,7 +374,7 @@ footer .rodape p i {
 }
 
 footer .rodape p a {
-  color: white;
+  color: inherit;
   font-size: 13px;
 }
 
@@ -397,6 +416,12 @@ footer .rodape .logo-rodapefora {
     border-radius: 15px;
   }
 
+  .btn-contatoinicio button {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+
   footer .rodape .flex .logo-rodape {
     display: none;
   }
@@ -405,6 +430,7 @@ footer .rodape .logo-rodapefora {
   /* Cabeçalho */
   header {
     padding: 10px 8%;
+    width: 106%;
   }
 
   header>.interface {
@@ -414,22 +440,20 @@ footer .rodape .logo-rodapefora {
   header .interface .logo a img{
     padding: 0px;
     width: auto;
-    height: 25px;
-    border-radius: 15px;
+    height: 60px;
   }
 
   header a {
     font-size: 14px;
-
   }
 
   header nav ul {
-    padding: 10px 7px;
+    padding: 0px;
   }
 
 
   header nav ul li {
-    padding: 10px 25px;
+    padding: 8px 12px;
   }
 
   header nav ul li a {
@@ -439,6 +463,24 @@ footer .rodape .logo-rodapefora {
   header nav ul li i {
     font-size: 10px;
   }
+
+  header .btn-contato-nav{
+    display: block;
+    padding: 6px 14px;
+    font-weight: 500px;
+    background-color: goldenrod;
+    border-radius: 20px;
+  }
+  
+  header .btn-contato-nav i{
+    font-size: 14px;
+    padding: 0px;
+  }
+
+  header .btn-contato-nav button:hover {
+  box-shadow: 0px 0px 8px goldenrod;
+  transform: scale(1.05);
+}
 
   /* CSS Banner inicio MOBILE */
   .container {
@@ -462,8 +504,8 @@ footer .rodape .logo-rodapefora {
 
   .inicio .txt-inicio p {
     max-width: 220px;
-    margin: 7px 0;
-    font-size: 14px;
+    margin: 3px 0;
+    font-size: 10px;
   }
 
 
@@ -473,6 +515,7 @@ footer .rodape .logo-rodapefora {
   }
 
   section.sobre .flex {
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
   }
@@ -483,10 +526,13 @@ footer .rodape .logo-rodapefora {
   }
 
   section.sobre .img-equipe {
-    width: 250px;
-    height: 350px;
+    width: 180px;
+    height: 280px;
+    background-size: cover;
+    background-clip: content-box;
     border-radius: 20px;
     margin: 0px auto;
+    position: relative;
   }
 
   .overlay-nome {
@@ -494,6 +540,11 @@ footer .rodape .logo-rodapefora {
     font-size: 20px;
   }
 
+  section.sobre .arrow {
+    position: absolute;
+    font-size: 18px;
+    color: goldenrod;
+  }
 
   /* CSS Formulário Fale Conosco MOBILE */
   section.formulario {
@@ -549,9 +600,9 @@ footer .rodape .logo-rodapefora {
   }
 
   footer .rodape img {
-    padding: 5px;
+    padding: 0px;
     width: auto;
-    height: 60px;
+    height: 80px;
   }
 
 }
