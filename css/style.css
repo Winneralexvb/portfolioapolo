@@ -137,7 +137,7 @@ header .darkbutton {
   color: goldenrod;
   background-color: black;
   border: 0px;
-  border-radius: 15px;
+  border-radius: 50%;
   transition: .2s;
   cursor: pointer
 }
@@ -161,6 +161,7 @@ header .interface .logo a img {
 
 /* CSS Banner Inicio */
 .container section.inicio {
+  padding-top: 0px;
   padding: 130px 4%;
 }
 
@@ -168,7 +169,7 @@ header .interface .logo a img {
   color: white;
   font-size: 30px;
   line-height: 32px;
-  padding-top: 165px;
+  padding-top: 160px;
 }
 
 .inicio .txt-inicio h1 span {
@@ -605,6 +606,49 @@ footer .rodape .logo-rodapefora {
     padding: 0px;
     width: auto;
     height: 80px;
+  }
+
+}
+
+/* media screen and (min-width: 1366px) { 
+  
+  .interface{
+    width: 100vw;
+    max-width: 1920px;
+    margin: 0px auto;
+  }
+
+  .inicio .txt-inicio h1 {
+    padding-top: 60px;
+  }
+
+}
+*/
+
+@media screen and (max-height: 715px) {
+
+  .inicio .txt-inicio h1 {
+    padding-top: 80px;
+  }
+
+}
+
+@media screen and (max-width: 405px) {
+  header nav ul {
+    padding: 1px;
+  }
+
+  header nav ul li {
+    padding: 5px;
+  }
+
+  header .darkbutton {
+    padding: 5px 10px;
+
+  }
+
+  .inicio .txt-inicio h1 {
+    padding-top: 60px;
   }
 
 }
