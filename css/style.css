@@ -31,8 +31,8 @@ body {
   color: black;
 }
 
-.btn-contato,
-.btn-contato button {
+.btn-form {
+  display: block;
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 500;
@@ -44,7 +44,9 @@ body {
   transition: .2s;
 }
 
-button:hover {
+
+.btn-contatoinicio button:hover,
+.btn-form:hover {
   box-shadow: 0px 0px 8px goldenrod;
   transform: scale(1.05);
 }
@@ -66,10 +68,6 @@ h2.titulo {
 
 h2.titulo span {
   color: goldenrod;
-}
-
-.btn-contato-nav {
-  display: none;
 }
 
 /* CSS Cabeçalho */
@@ -100,16 +98,13 @@ header .logo a:hover {
   transform: scale(1.15);
 }
 
-/* !!!!!!!!! */
+/* Menu de Navegação */
 
 header nav {
+  display: block;
   position: static;
   z-index: 999;
   transition: transform 0.3s ease-in-out;
-}
-
-header nav.scrolled {
-  transform: translateY(-100%);
 }
 
 header nav ul {
@@ -128,27 +123,78 @@ header nav ul li {
 
 header nav ul li a {
   font-size: 15px;
-  justify-content: center;
 }
 
-header .darkbutton {
+.darkbutton {
   font-size: 15px;
   padding: 10px 15px;
-  color: goldenrod;
-  background-color: black;
+  color: black;
+  background-color: goldenrod;
   border: 0px;
   border-radius: 50%;
   transition: .2s;
   cursor: pointer
 }
 
-nav .darkbutton:hover {
-  background-color: goldenrod;
+.darkbutton:hover {
+  color: rgb(243, 220, 191);
   transform: scale(1.15);
 }
 
-header nav button {
+header nav .btn {
   display: none;
+}
+
+
+/* Botão Contato Nav */
+.btn-contato-nav {
+  display: none;
+}
+
+.btn-contato-nav.fixed {
+  display: inline-block;
+  padding: 6px 14px;
+  border: none;
+  font-weight: 500px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.btn-contato-nav i {
+  font-size: 14px;
+  color: white;
+  padding: 0px;
+}
+
+.btn-contato-nav i:hover {
+  color: goldenrod;
+  transform: scale(1.05);
+}
+
+
+/* Botão Darkmode Nav */
+.navdarkbutton {
+  display: none;
+}
+
+.navdarkbutton.fixed {
+  display: inline-block;
+  padding: 6px 14px;
+  border: none;
+  font-weight: 500px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.navdarkbutton i {
+  font-size: 14px;
+  color: white;
+  padding: 0px;
+}
+
+.navdarkbutton i:hover {
+  color: goldenrod;
+  transform: scale(1.05);
 }
 
 /* Modificação Logo do Menu */
@@ -393,7 +439,7 @@ footer .rodape .logo-rodapefora {
 
 @media screen and (max-width: 1020px) {
 
-  .btn-contato {
+  .btn {
     display: none;
   }
 
@@ -412,7 +458,7 @@ footer .rodape .logo-rodapefora {
     font-size: 20px;
   }
 
-  .btn-contato button {
+  .btn-form button {
     padding: 10px 25px;
     font-size: 14px;
     border-radius: 15px;
@@ -428,15 +474,20 @@ footer .rodape .logo-rodapefora {
     display: none;
   }
 
-
   /* Cabeçalho */
   header {
-    padding: 10px 8%;
-    width: 106%;
+    padding: 10px 4%;
   }
 
   header>.interface {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .logo {
+    position: absolute;
+    left: 2%;
+    top: 0px;
   }
 
   header .interface .logo a img {
@@ -450,6 +501,7 @@ footer .rodape .logo-rodapefora {
   }
 
   header nav ul {
+    justify-content: space-around;
     padding: 0px;
   }
 
@@ -462,27 +514,30 @@ footer .rodape .logo-rodapefora {
     font-size: 12px;
   }
 
-  header nav ul li i {
-    font-size: 10px;
+  .btn-contato-nav i {
+    font-size: 12px;
   }
 
-  header .btn-contato-nav {
-    display: block;
+  .btn-contato-nav {
+    display: inline-block;
     padding: 6px 14px;
+    border: none;
     font-weight: 500px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
   }
 
-  header .btn-contato-nav i {
-    font-size: 14px;
-    color: white;
-    padding: 0px;
+  .navdarkbutton i {
+    font-size: 12px;
   }
 
-  header .btn-contato-nav button:hover {
-    box-shadow: 0px 0px 8px goldenrod;
-    transform: scale(1.05);
+  .navdarkbutton {
+    display: inline-block;
+    padding: 6px 14px;
+    border: none;
+    font-weight: 500px;
+    background-color: black;
+    border-radius: 20px;
   }
 
   /* CSS Banner inicio MOBILE */
@@ -609,21 +664,6 @@ footer .rodape .logo-rodapefora {
   }
 
 }
-
-/* media screen and (min-width: 1366px) { 
-  
-  .interface{
-    width: 100vw;
-    max-width: 1920px;
-    margin: 0px auto;
-  }
-
-  .inicio .txt-inicio h1 {
-    padding-top: 60px;
-  }
-
-}
-*/
 
 @media screen and (max-height: 715px) {
 
