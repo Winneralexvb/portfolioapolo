@@ -17,6 +17,18 @@ body {
   height: 100vh;
 }
 
+/* Scrollbar */
+html ::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: goldenrod;
+}
+/* Fim Scrollbar */
+
 .interface {
   max-width: 1280px;
   margin: 0px auto;
